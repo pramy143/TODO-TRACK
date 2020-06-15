@@ -1,0 +1,84 @@
+.bullet.bullet-sm {
+    width: 10px;
+    height: 10px;
+}
+
+.bullet.bullet-primary {
+    background-color: #5A8DEE;
+}
+
+.bullet.bullet-success {
+    background-color: #39DA8A;
+}
+
+.bullet {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.bullet.bullet-danger {
+    background-color: #FF5B5C;
+}
+
+.bullet.bullet-warning {
+    background-color: #FDAC41;
+}
+
+.bullet.bullet-info {
+    background-color: #00CFDD;
+}
+
+.bullet {
+    border-radius: 50%;
+}
+
+.filter-label {
+    font-family: Montserrat,Georgia,'Times New Roman',Times,serif;
+    letter-spacing: 1px;
+    color: #BAC0C7;
+    padding-top: 10px;
+}
+
+.vertical-menu-verticle-pad {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+    box-shadow: none;
+    padding: .4rem 1rem;
+    color: #404E67;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: .25rem!important;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.mr-50, .mx-50 {
+    margin-right: .5rem!important;
+}
+span {
+    font-size: 1rem;
+}
+
+.menu-main-padding {
+  padding-top: 10px;
+}
+
+.vertical-btn-primary {
+    font-size: 1.1em;
+    color: #30318b;
+    font-style: italic;
+    font-weight: 700;
+    border-left: 2px solid #ffe71d;
+    box-shadow: 0 2px 4px 0 rgba(90,141,238,.4);
+}
+
+.vertical-primary-pad {
+    margin-top: 20px;
+}

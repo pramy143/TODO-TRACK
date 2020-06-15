@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-8 col-lg-8">
+
+      <form *ngIf="task">
+        <article class="artical-body" >
+          <div class="task-header d-flex justify-content-between">
+            <button class="mark-complete-btn btn btn-light-primary btn-sm">
+              <i class="fa fa-check align-middle btn-fa-pad"></i>
+              <span class="mark-complete align-middle">Mark Complete</span>
+            </button>
+          </div>
+          <hr>
+          <div class="form-row">
+            <div class="col form-group">
+              <label for="subject"><i class="fa fa-tasks btn-fa-pad" aria-hidden="true"></i> Task Name</label>
+              <textarea name="subject" id="subject" [(ngModel)]="task.subject" class="form-control" placeholder="Write a task name."></textarea>
+            </div> <!-- form-group end.// -->
+          </div> <!-- form-row end.// -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="assignedTo"><i class="fa fa-user-circle-o btn-fa-pad" aria-hidden="true"></i>Assign To</label>
+                <input id="assignedTo" name="assignedTo" [(ngModel)]="task.assignedTo" class="form-control"  placeholder="Unassigned.">
+            </div> <!-- form-group end.// -->
+            <div class="form-group col-md-6">
+              <label for="assignedDate"><i class="fa fa-calendar btn-fa-pad" aria-hidden="true"></i>Assigned Date</label>
+                <input id="assignedDate" name="assignedDate" type="text" class="form-control"  placeholder="MM/DD/YY">
+            </div> <!-- form-group end.// -->
+          </div> <!-- form-row.// -->
+          <div class="form-group">
+            <label for="description"><i class="fa fa-sticky-note-o btn-fa-pad" aria-hidden="true"></i>Description</label>
+            <textarea name="description" id="description" [(ngModel)]="task.description" class="form-control" placeholder="Add Description..."></textarea>
+          </div> <!-- form-group end.// -->
+
+          <div class="form-group">
+            <label for="tags"><i class="fa fa-tags btn-fa-pad" aria-hidden="true"></i> (Select tags, this belongs to.)</label>
+              <input name="tags" id="tags" class="form-control" [(ngModel)]="task.tags" placeholder="Add tags..." >
+            </div> <!-- form-group end.// -->
+          <div class="form-group">
+            <label for="additionalComments"><i class="fa fa-comments-o btn-fa-pad" aria-hidden="true"></i>(Comments)</label>
+            <textarea name="additionalComments" id="additionalComments" [(ngModel)]="task.comments" class="form-control" placeholder="Add comments..."></textarea>
+          </div> <!-- form-group end.// -->
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <button type="button" name="button" class="btn btn-bd-primary"(click)="goBack()"><i class="fa fa-arrow-circle-o-left btn-fa-pad" aria-hidden="true"></i>Back</button>
+              <button type="button" name="button" class="btn btn-bd-primary"><i class="fa fa-refresh btn-fa-pad" aria-hidden="true"></i>Reset</button>
+              <button type="button" name="button" class="btn btn-bd-primary" (click)="save()"><i class="fa fa-floppy-o btn-fa-pad" aria-hidden="true"></i>Save</button>
+              <button type="button" name="button" class="btn btn-bd-primary"><i class="fa fa-trash-o btn-fa-pad" aria-hidden="true"></i>Delete</button>
+            </div> <!-- form-group end.// -->
+          </div> <!-- form-row.// -->
+        </article> <!-- card-body end .// -->
+      </form>
+    </div>
+  <!-- side card-body start-->
+  </div>

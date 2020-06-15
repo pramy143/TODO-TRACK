@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="page-header">All Tasks</h1>
+      <div class="col-md-5">
+          <label class="filter-label mt-2 mb-1 pt-25">Filters :</label>
+          <a href="#" class="card-link"><i class="fa fa-square-o all-fa-pad" aria-hidden="true"></i> (50)</a>
+          <a href="#" class="card-link"><i class="fa fa-check-square-o all-fa-pad" aria-hidden="true"></i>(25)</a>
+          <a href="#" class="card-link"><i class="fa fa-trash-o all-fa-pad" aria-hidden="true"></i>(25)</a>
+          <a href="#" class="card-link"><i class="fa fa-star-o all-fa-pad" aria-hidden="true"></i>(25)</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="ps-content list-display" *ngFor="let task of tasks">
+      <div class="widget-content p-0">
+          <div class="widget-content-wrapper task-list-display">
+              <div class="widget-content-left mr-2">
+                <div class="todo-indicator bg-warning"></div>
+                  <div class="custom-checkbox todo-custom-control task-list-chk-display">
+                    <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox">
+                    <label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label>
+                  </div>
+              </div>
+              <div class="widget-content-left task-widget-width">
+                  <div class="widget-heading">
+                      <a class="card-title" routerLink="/detail/{{task.id}}">{{ task.subject }}</a>
+                  </div>
+                  <div class="widget-subheading">
+                    <i>By {{ task.createdBy }}</i>
+                  </div>
+              </div>
+              <div class="widget-content-right">
+                <a class="fa fa-star-o white-text list-fa-display"></a>
+                <a class="fa fa-trash-o black white-text list-fa-display" (click)="delete(task)"></a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

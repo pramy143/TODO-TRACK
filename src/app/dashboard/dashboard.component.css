@@ -1,0 +1,49 @@
+.card-title {
+  font-family: Montserrat,Georgia,'Times New Roman',Times,serif;
+  letter-spacing: .5px;
+  color: #404E67;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+.card {
+  font-size: 1em;
+    color: #30318b;
+    font-style: italic;
+    font-weight: 700;
+    border-left: 2px solid #ffe71d;
+    box-shadow: 0 2px 4px 0 rgba(90,141,238,.4);
+    margin-bottom: 20px;
+}
+
+.card-link {
+    box-shadow: none;
+    color: #404E67;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.dashboard-fa-pad {
+  padding-right: 5px;
+}
+
+.dashboard-fa-open {
+  border-bottom: 2px solid orange;
+}
+
+.dashboard-fa-completed {
+  border-bottom: 2px solid green;
+}
+
+.dashboard-fa-trashed {
+  border-bottom: 2px solid red;
+}
+
+.page-header {
+    font-size: 1.3em;
+    color: #30318b;
+    font-style: italic;
+    font-weight: 700;
+    padding-top: 30px;
+}

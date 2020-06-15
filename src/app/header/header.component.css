@@ -1,0 +1,36 @@
+.bg-header {
+  background: #30318b;
+  border-bottom: 2px solid #ffe71d;
+  font-size: 1.1em;
+}
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+#logo {
+	vertical-align:middle;
+}
+.navbar-brand span {
+	font-size:1.5rem;
+	line-height:1;
+	display:inline-block;
+	vertical-align:middle;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+}
+.navbar-brand b {
+	display:block;
+	font-size:50%;
+	line-height:1;
+  padding-left: 45px;
+  font-weight: 500;
+}
+.sub-heading {
+	color: #ffe71d;
+}
+.navbar-nav {
+	margin-left:auto;
+}

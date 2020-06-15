@@ -1,0 +1,53 @@
+
+.artical-body {
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;
+  margin: .5em 0;
+  color: #212529;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+.btn-bd-primary {
+    padding: 2px 10px;
+    font-size: 1.1em;
+    color: #30318b;
+    font-style: italic;
+    font-weight: 700;
+    margin: 2px;
+    align:center;
+}
+.btn-fa-pad {
+    padding-right: 10px;
+}
+
+.article-form-padding {
+    padding-top: 10px;
+}
+
+.edit-right-column-display {
+  padding-top: 50px;
+}
+
+.btn-light-primary {
+    background-color: #E2ECFF;
+    color: #5A8DEE!important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .467rem 1.2rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    border-radius: .267rem;
+}
